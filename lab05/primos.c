@@ -33,7 +33,7 @@ int main(int argc, char **argv)
   j = strtol(argv[1], NULL, 10);
   k = strtol(argv[2], NULL, 10);
 
-  MPI_Init(NULL, NULL);
+  MPI_Init(&argc, &argv);
   MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
   MPI_Comm_rank(MPI_COMM_WORLD, &myid);
 
