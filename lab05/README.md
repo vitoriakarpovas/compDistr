@@ -16,3 +16,6 @@ Para subir o código para a máquina
 
 e ele deve retornar isso daqui:
 ![image](https://user-images.githubusercontent.com/73562058/195142297-f68e57db-286e-4191-aa81-93b1eb03168e.png)
+
+
+speedup = serial/paralela
