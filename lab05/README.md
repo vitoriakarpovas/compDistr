@@ -19,4 +19,5 @@ e ele deve retornar isso daqui:
 
 
 speedup = serial/paralela
+
 ![image](https://user-images.githubusercontent.com/73562058/195142965-5d799f14-d285-4ab6-a3f6-40bc275117ea.png)
