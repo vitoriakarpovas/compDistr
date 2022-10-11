@@ -8,6 +8,8 @@ Antes de executar, é preciso dar o seguinte comando:
 
 Para subir o código para a máquina
 
+-> cd compDistr/lab05                          // para entrar na pasta lab05
+
 -> mpicc -g -Wall -o mpi_primo primos.c -lm    // esse comando serve para criar o executável mpi_primo
 
 -> mpiexec -n 2 --host slave1 --host slave2 /home/ubuntu/compDistr/lab05/primos.c           // esse comando serve para executar o exe que criamos nas máquinas slaves
