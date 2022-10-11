@@ -54,7 +54,7 @@ int main(int argc, char **argv){
   {
     time = MPI_Wtime() - time;
     printf("The total primes is %d.\n", totalPrimes);
-    printf("\ntime: %14f", time);
+    printf("\ntime: %14f\n", time);
   }
 
   MPI_Finalize();
