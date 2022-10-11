@@ -21,10 +21,7 @@ int isPrime(int numero){
 int main(int argc, char **argv){
   int myid, numprocs;
   int myTotalPrimes = 0, totalPrimes = 0;
-  int *primes;
-  int *myPrimes;
-  int i, low, high;
-  int j, k;
+  int i, low = 0, high;
   double time;
 
   MPI_Init(&argc, &argv);
