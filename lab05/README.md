@@ -1,8 +1,7 @@
-Neste laboratório nos foi instruindo a criar um arquivo .c que nele continha uma função para achar os primos dentro de determinados parametrôs, não só isso, 
-mas também montá-la de forma que consigamos executá-la de forma paralela em multiplas máquinas. 
+Neste laboratório nos foi instruindo a criar um arquivo .c com uma função para achar os primos dentro de determinados parametrôs, e montá-la de para que seja possível executá-la de forma paralela em multiplas máquinas. 
 Para tal feito, nós utilizamos a biblioteca <mpi.h> e executamos da seguinte maneira:
 
-Antes de executar, é preciso dar o seguinte comando:
+Antes de executar, é preciso dar o seguinte comando em todas as máquinas para clonar o git onde está o código:
 
 -> git clone https://github.com/vitoriakarpovas/compDistr.git
 
