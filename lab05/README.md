@@ -2,21 +2,21 @@ Neste laboratório nos foi instruindo a criar um arquivo .c com uma função par
 Para tal feito, nós utilizamos a biblioteca <mpi.h> e executamos da seguinte maneira:
 
 Antes de executar, é preciso dar o seguinte comando em todas as máquinas para clonar o git onde está o código:
-
 -> git clone https://github.com/vitoriakarpovas/compDistr.git
 
-Para subir o código para a máquina
+Em seguida, entramos na pasta onde está o código e criamos o executável, também em todas as máquinas:
+-> cd compDistr/lab05 
+-> mpicc -g -Wall -o mpi_primo primoAtualizado.c -lm 
 
--> cd compDistr/lab05                          // para entrar na pasta lab05
+Por fim, na máquina master, rodamos o seguinte comando para executar o executável criado (em duas máquinas slave):
+-> mpiexec -n 2 --host slave1 --host slave2 /home/ubuntu/compDistr/lab05/mpi_primo 
 
--> mpicc -g -Wall -o mpi_primo primoAtualizado.c -lm    // esse comando serve para criar o executável mpi_primo
-
--> mpiexec -n 2 --host slave1 --host slave2 /home/ubuntu/compDistr/lab05/mpi_primo           // esse comando serve para executar o exe que criamos nas máquinas slaves
-
-e ele deve retornar isso daqui:
+Retorno esperado:
 ![image](https://user-images.githubusercontent.com/73562058/195142297-f68e57db-286e-4191-aa81-93b1eb03168e.png)
 
 
+
+----------------------------------------------------------------------------------------------------------------------
 speedup = serial/paralela
 
 para duas máquinas slaves:
