@@ -21,8 +21,6 @@ Retorno esperado:
 
 
 ----------------------------------------------------------------------------------------------------------------------
-speedup = serial/paralela
+speedup em duas máquinas slaves:
 
-para duas máquinas slaves:
-
-![image](https://user-images.githubusercontent.com/73562058/195142965-5d799f14-d285-4ab6-a3f6-40bc275117ea.png)
+![WhatsApp Image 2022-10-13 at 8 24 47 PM](https://user-images.githubusercontent.com/64480334/195728833-af73f99e-2d5a-4a6e-9ad9-bb9e7675d896.jpeg)
