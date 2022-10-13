@@ -16,7 +16,7 @@ Por fim, na máquina master, rodamos o seguinte comando para executar o executá
 -> mpiexec -n 2 --host slave1 --host slave2 /home/ubuntu/compDistr/lab05/mpi_primo 
 
 Retorno esperado:
-![image](blob:https://web.whatsapp.com/afbbb835-09e8-42f5-b90f-0ee473c4e549)
+![image]("C:\Users\gsval_000\Desktop\colocarprintcompdistr.jpg")
 
 
 
