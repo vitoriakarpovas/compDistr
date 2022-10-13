@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <mpi.h>
 
-#define MAXSIZE 300
+#define MAXSIZE 5000000
 
 int isPrime(int numero){
   int raiz, fator;
