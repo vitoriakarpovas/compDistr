@@ -15,5 +15,13 @@ Por fim, na máquina master, rodamos o seguinte comando para executar o executá
 
 -> mpiexec -n 2 --host slave1 --host slave2 /home/ubuntu/compDistr/lab05/mpi_primo 
 
+para executar em 4 máquinas:
+
+-> mpiexec -n 4 --host slave1 --host slave2 --host slave3 --host slave4 /home/ubuntu/compDistr/lab05/mpi_primo
+
+para executar em 8 máquinas:
+
+-> mpiexec -n 8 --host slave1 --host slave2 --host slave3 --host slave4 --host slave5 --host slave6 --host slave7 --host slave8 /home/ubuntu/compDistr/lab05/mpi_primo
+
 Retorno esperado:
 ![image](https://user-images.githubusercontent.com/64614300/195726770-753c963a-4a4d-46ec-8377-9048e5e0b567.jpg)
