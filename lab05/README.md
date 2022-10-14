@@ -17,10 +17,3 @@ Por fim, na máquina master, rodamos o seguinte comando para executar o executá
 
 Retorno esperado:
 ![image](https://user-images.githubusercontent.com/64614300/195726770-753c963a-4a4d-46ec-8377-9048e5e0b567.jpg)
-
-
-
-----------------------------------------------------------------------------------------------------------------------
-speedup em duas máquinas slaves:
-
-![WhatsApp Image 2022-10-13 at 8 24 47 PM](https://user-images.githubusercontent.com/64480334/195728833-af73f99e-2d5a-4a6e-9ad9-bb9e7675d896.jpeg)
