@@ -1,25 +1,28 @@
 from flask import Flask
-from flask import jsonify
-from flask import request
+import requests
 
 app = Flask(__name__)
 
-converte=[
-  {
-  'real' : '5',
-  'dolar': '2',
-  'euro' : '3'
-  }
-]
+@app.route("/",methods=['GET'])
+def loadBalancer():
+  return "Success", 200
 
-@app.route('/convertemoeda/<VALORES>',methods=['PUT'])
-def convertemoeda(VALORES):
-  em = [emp for emp in converte if (emp['real'] == VALORES)]
-  if 'dolar' in request.json:
-    em[0]['dolar'] = request.json['dolar']
-  if 'euro' in request.json:
-    em[0]['euro'] = request.json['euro']
-  return jsonify({'emp':em[0]})
+@app.route('/convertemoeda/<valor>',methods=['GET'])
+def convertemoeda(valor):
+  url = "https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL"
+
+  response = requests.get(url)
+  response_json = response.json()
+  dolar = response_json.get("USDBRL").get("low")
+  euro = response_json.get("EURBRL").get("low")
+
+  usd = float(dolar)
+  eur = float(euro)
+  real = float(valor)
+  
+  resp = f"real pra dolar: {real/usd}" + f"real pra euro: {real/eur}" 
+  
+  return resp
 
 if __name__ == '__main__':
-  app.run()
+ app.run()
