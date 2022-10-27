@@ -21,7 +21,8 @@ def convertemoeda(valor):
   real = float(valor)
   
   resp = f"real pra dolar: {real/usd}" + f"real pra euro: {real/eur}" 
-  
+  print("dollar: ")
+  print(usd)
   return resp
 
 if __name__ == '__main__':
